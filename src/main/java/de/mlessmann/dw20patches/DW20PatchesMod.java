@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package de.mlessmann.dw20patches;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.level.block.Block;
@@ -18,13 +18,13 @@ import org.slf4j.Logger;
 import java.util.stream.Collectors;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod("examplemod")
-public class ExampleMod
+@Mod("dw20patches")
+public class DW20PatchesMod
 {
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public ExampleMod()
+    public DW20PatchesMod()
     {
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
